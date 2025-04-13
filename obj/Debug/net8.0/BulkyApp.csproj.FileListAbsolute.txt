@@ -102,3 +102,4 @@
 /home/mohamed/Downloads/VideoDownloader/Asp.net/bulky/Bulky/BulkyApp/obj/Debug/net8.0/BulkyApp.csproj.Up2Date
 /home/mohamed/Downloads/VideoDownloader/Asp.net/bulky/Bulky/BulkyApp/bin/Debug/net8.0/MySqlConnector.dll
 /home/mohamed/Downloads/VideoDownloader/Asp.net/bulky/Bulky/BulkyApp/bin/Debug/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
+/home/mohamed/Downloads/VideoDownloader/Asp.net/bulky/Bulky/BulkyApp/obj/Debug/net8.0/BulkyApp.sourcelink.json

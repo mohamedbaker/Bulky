@@ -1,0 +1,25 @@
+﻿@model List<Category>
+<h1>Category List 1</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            @* <th>Id</th> *@
+            <th>Name</th>
+            <th>DisplayOrder</th>
+            @* <th>Actions</th> *@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model.OrderBy(c => c.DisplayOrder))
+        {
+            <tr>
+                @* <td>@category.Id</td> *@
+                <td>@category.Name</td>
+                <td>@category.DisplayOrder</td>
+                @* <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = category.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = category.Id })
+                </td> *@
+            </tr>
+        }
+    </tbody>

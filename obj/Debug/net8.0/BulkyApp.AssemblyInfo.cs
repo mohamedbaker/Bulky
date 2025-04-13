@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BulkyApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fade0aeb61f118f72f7ffa847703f727476117b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BulkyApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BulkyApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
