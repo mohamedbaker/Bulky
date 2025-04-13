@@ -1,11 +1,11 @@
 ﻿@model List<Category>
 <h1>Category List 1</h1>
-<table class="table table-striped">
+<table class="table table-bordered table-striped">
     <thead>
         <tr>
             @* <th>Id</th> *@
             <th>Name</th>
-            <th>DisplayOrder</th>
+            <th class="text-center">DisplayOrder</th>
             @* <th>Actions</th> *@
         </tr>
     </thead>
@@ -15,11 +15,12 @@
             <tr>
                 @* <td>@category.Id</td> *@
                 <td>@category.Name</td>
-                <td>@category.DisplayOrder</td>
+                <td class="text-center">@category.DisplayOrder</td>
                 @* <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = category.Id }) |
+                    @Html.ActionLink("Edit", "Edit", new { id = category.Id })
                     @Html.ActionLink("Delete", "Delete", new { id = category.Id })
                 </td> *@
             </tr>
         }
     </tbody>
+</table>
