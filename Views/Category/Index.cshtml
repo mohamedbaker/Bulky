@@ -1,26 +1,54 @@
 ﻿@model List<Category>
-<h1>Category List 1</h1>
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            @* <th>Id</th> *@
-            <th>Name</th>
-            <th class="text-center">DisplayOrder</th>
-            @* <th>Actions</th> *@
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var category in Model.OrderBy(c => c.DisplayOrder))
-        {
-            <tr>
-                @* <td>@category.Id</td> *@
-                <td>@category.Name</td>
-                <td class="text-center">@category.DisplayOrder</td>
-                @* <td>
+@{
+    ViewData["Title"] = "Category List";
+}
+@* This is the view for displaying the list of categories *@
+@* It uses the Bootstrap framework for styling and layout *@
+@* The model is a list of Category objects *@
+@* The view is strongly typed to the List<Category> model *@
+@* The view is using Razor syntax to generate HTML *@
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text-primary">
+                Category List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Create New Category
+            </a>
+        </div>
+    </div>
+    <div class="card p-3 shadow-sm">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    @* <th>Id</th> *@
+                    <th>
+                        Category Name
+                    </th>
+                    <th>
+                        Display Order
+                    </th>
+                    @* <th>Actions</th> *@
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model.OrderBy(c => c.DisplayOrder))
+                {
+                    <tr>
+                        @* <td>@category.Id</td> *@
+                        <td>@category.Name</td>
+                        <td>@category.DisplayOrder</td>
+                        @* <td>
                     @Html.ActionLink("Edit", "Edit", new { id = category.Id })
                     @Html.ActionLink("Delete", "Delete", new { id = category.Id })
                 </td> *@
-            </tr>
-        }
-    </tbody>
-</table>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
